@@ -149,11 +149,7 @@ class GameScreen extends Scene{
         let playerLayer = this.getLayer(2);
         let uiLayer = this.getLayer(3);
 
-<<<<<<< HEAD
-        background.canvas.style.backgroundColor = "blue";
-=======
         background.canvas.style.backgroundColor = "white";
->>>>>>> bc9858d389b9b249910891f602a3171a5e36b83b
         playerLayer.context.clearRect(0, 0, playerLayer.canvas.width, playerLayer.canvas.height);
         this.gameWorld.render();
     }
