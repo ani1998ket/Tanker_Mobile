@@ -91,7 +91,6 @@ class GameScreen extends Scene{
       //  this.gameWorld.addGameObject(new GameObject(this.getLayer(1), new Vector2d(100, 50), 50, 400));
 
         let uiLayer = this.getLayer(3);
-
         let upButton = new ImageButton(uiLayer, button1u, button1d, new Vector2d(80, 3/4 * GAME_HEIGHT),  40, 40);
         let downButton = new ImageButton(uiLayer, button1u, button1d, new Vector2d(80, 3/4 * GAME_HEIGHT + 80),  40, 40);
         let leftButton = new ImageButton(uiLayer, button1u, button1d, new Vector2d(40, 3/4 * GAME_HEIGHT + 40),  40, 40);
@@ -101,6 +100,9 @@ class GameScreen extends Scene{
         this.gameWorld.addGameObject(downButton);
         this.gameWorld.addGameObject(leftButton);
         this.gameWorld.addGameObject(rightButton);
+
+        let joystick = new OnScreenController(uiLayer, new Rectangle(50, 50, 30, 50));
+        this.gameWorld.addGameObject(joystick);
 
         let player = this.gameWorld.gameObjects[0];
 
@@ -140,6 +142,8 @@ class GameScreen extends Scene{
           player.velocity = new Vector2d(5, 0);       //for right button
           player.angle = 1 * PI/2;
         }
+
+        
 
     }
 

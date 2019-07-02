@@ -10,4 +10,9 @@ loadScript(LIBPATH + "Scenes/Layer.js");
 loadScript(LIBPATH + "World/GameObject.js");
 loadScript(LIBPATH + "World/World.js");
 
+loadScript(LIBPATH + "Shapes/Rectangle.js");
+loadScript(LIBPATH + "Shapes/Circle.js");
+loadScript(LIBPATH + "Shapes/ShapeRenderer.js");
+loadScript(LIBPATH + "UI/OnScreenController.js");
+
 // loadScript();
